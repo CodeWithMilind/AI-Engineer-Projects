@@ -158,7 +158,7 @@ def query_document(query: QueryRequest):
         raise HTTPException(status_code=400, detail="A non-empty question is required.")
 
     try:
-        answer = answer_question(
+        result = answer_question(
             user_question=query.question,
             index=faiss_index,
             chunks=chunks,
@@ -166,7 +166,9 @@ def query_document(query: QueryRequest):
             ollama_client=ollama_client,
             top_k=query.top_k or 3,
         )
-        return {"answer": answer}
+        return result
+    except RuntimeError as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
     except OllamaError as exc:
         raise HTTPException(status_code=502, detail=str(exc)) from exc
     except ValueError as exc:
