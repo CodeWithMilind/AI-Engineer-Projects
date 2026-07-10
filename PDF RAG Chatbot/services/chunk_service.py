@@ -5,8 +5,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 def chunk_pdf_pages(
     pages: List[Dict],
-    chunk_size: int = 100,
-    chunk_overlap: int = 20,
+    chunk_size: int = 1000,
+    chunk_overlap: int = 200,
 ) -> List[Dict]:
     """Convert extracted PDF pages into overlapping text chunks.
 

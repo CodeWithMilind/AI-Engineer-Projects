@@ -43,6 +43,9 @@ def retrieve_top_chunks(
 
     sources: List[Dict[str, Any]] = []
     for chunk_index, (chunk_text, score) in enumerate(results, start=1):
+        logger.info("===== Retrieved Chunk %d =====", chunk_index)
+        logger.info("%s", chunk_text)
+        logger.info("Similarity Score: %.4f", float(score))
         sources.append(
             {
                 "chunk": chunk_index,
@@ -120,12 +123,14 @@ def answer_question(
         }
 
     prompt = build_prompt_template(retrieved_chunks, user_question)
+    logger.info("=== Prompt Sent To Ollama ===\n%s", prompt)
 
     try:
         logger.info("Sending the RAG prompt to Ollama.")
         ollama_start = time.perf_counter()
         answer = ollama_client.generate(prompt)
         ollama_time = time.perf_counter() - ollama_start
+        logger.info("=== Ollama Response ===\n%s", answer)
         logger.info("Ollama responded in %.3f seconds.", ollama_time)
     except OllamaError as exc:
         logger.exception("Ollama failed while generating an answer.")
