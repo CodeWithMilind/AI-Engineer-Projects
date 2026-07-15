@@ -1,0 +1,39 @@
+TAX INVOICE
+Invoice No: INV-2026-001
+Date: 14-Jul-2026
+Vendor
+ABC Pvt Ltd
+Mumbai, India
+GSTIN: 27ABCDE1234F1Z5
+Customer
+XYZ Technologies
+Pune, India
+GSTIN: 27XYZDE5678K2Z9
+Item
+Qty
+Unit Price (I)
+Total (I)
+Laptop
+2
+50,000
+100,000
+Mouse
+3
+500
+1,500
+Keyboard
+2
+1,000
+2,000
+Monitor
+1
+12,000
+12,000
+Subtotal: I115,500
+GST (18%): I20,790
+Grand Total: I136,290
+Bank Details
+Account Name: ABC Pvt Ltd
+Bank: HDFC Bank
+Account No: 123456789012
+IFSC: HDFC0001234

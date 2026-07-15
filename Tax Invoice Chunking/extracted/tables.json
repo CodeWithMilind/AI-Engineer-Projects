@@ -1,0 +1,37 @@
+[
+  {
+    "table_name": "Invoice Items",
+    "columns": [
+      "Item",
+      "Qty",
+      "Unit Price (I)",
+      "Total (I)"
+    ],
+    "rows": [
+      {
+        "Item": "Laptop",
+        "Qty": "2",
+        "Unit Price (I)": "50,000",
+        "Total (I)": "100,000"
+      },
+      {
+        "Item": "Mouse",
+        "Qty": "3",
+        "Unit Price (I)": "500",
+        "Total (I)": "1,500"
+      },
+      {
+        "Item": "Keyboard",
+        "Qty": "2",
+        "Unit Price (I)": "1,000",
+        "Total (I)": "2,000"
+      },
+      {
+        "Item": "Monitor",
+        "Qty": "1",
+        "Unit Price (I)": "12,000",
+        "Total (I)": "12,000"
+      }
+    ]
+  }
+]

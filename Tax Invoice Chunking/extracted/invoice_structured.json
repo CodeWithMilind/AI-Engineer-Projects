@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "HEADER": [
+      "TAX INVOICE",
+      "Invoice No: INV-2026-001\nDate: 14-Jul-2026"
+    ],
+    "VENDOR": [
+      "Vendor\nABC Pvt Ltd\nMumbai, India\nGSTIN: 27ABCDE1234F1Z5"
+    ],
+    "CUSTOMER": [
+      "Customer\nXYZ Technologies\nPune, India\nGSTIN: 27XYZDE5678K2Z9"
+    ],
+    "ITEMS": [
+      "Item\nQty\nUnit Price (I)\nTotal (I)",
+      "Laptop\n2\n50,000\n100,000",
+      "Mouse\n3\n500\n1,500",
+      "Keyboard\n2\n1,000\n2,000",
+      "Monitor\n1\n12,000\n12,000"
+    ],
+    "TOTALS": [
+      "Subtotal: I115,500\nGST (18%): I20,790\nGrand Total: I136,290"
+    ],
+    "BANK": [
+      "Bank Details\nAccount Name: ABC Pvt Ltd\nBank: HDFC Bank\nAccount No: 123456789012\nIFSC: HDFC0001234"
+    ]
+  },
+  "tables": [
+    {
+      "table_name": "Invoice Items",
+      "columns": [
+        "Item",
+        "Qty",
+        "Unit Price (I)",
+        "Total (I)"
+      ],
+      "rows": [
+        {
+          "Item": "Laptop",
+          "Qty": "2",
+          "Unit Price (I)": "50,000",
+          "Total (I)": "100,000"
+        },
+        {
+          "Item": "Mouse",
+          "Qty": "3",
+          "Unit Price (I)": "500",
+          "Total (I)": "1,500"
+        },
+        {
+          "Item": "Keyboard",
+          "Qty": "2",
+          "Unit Price (I)": "1,000",
+          "Total (I)": "2,000"
+        },
+        {
+          "Item": "Monitor",
+          "Qty": "1",
+          "Unit Price (I)": "12,000",
+          "Total (I)": "12,000"
+        }
+      ]
+    }
+  ]
+}
